@@ -1,6 +1,6 @@
 # Onboarding
 
-This document aims to outlines some areas of interest when onboarding as a front-end developer at Just Giving.
+This document aims to outlines some areas of interest when onboarding as a front-end developer at Just Giving for the Fundraising team.
 
 ## Slack groups
 
@@ -32,53 +32,99 @@ For both sites you will require admin privilages in order to see private reposit
 
 Pull Requests are used to discuss and review new work that's been created for a project. A pull request is opened with the intention that the code within it, once approved, can be pulled into the main repository.
 
-When a branch is created locally, the changes within it first need to be staged locally, `git add -a -m "new commit message"`, and then pushed to the remote repository, `git push -u origin <branch-name>`. 
+#### Pushing a branch to origin
+
+When a branch is created locally, the changes within it first need to be staged locally, `git add -a -m "new commit message"`, and then pushed to the remote repository, `git push -u origin <branch-name>`.
+
+#### Opening a PR
 
 The changes can then be compared to a receiving branch and a PR can be opened. See [here](https://help.github.com/en/articles/creating-a-pull-request) for more info.
+
+#### PR message
 
 Make sure to be descriptive as possible in the PR message. A link to a relating JIRA ticket and small description of feature added/problem solved is useful. Additionally, for any front-end tasks, a screenshot of the change made is a good idea.
 
 ![](images/pr-details.png)
 
-### Repos
+#### Approval
 
-Common repositories:
+Before a PR can be merged, it first needs to be checked and approved by another member of the team. For front-end tickets, the PR can be added to the `frontend-prs` slack group, where a member of another team will pick it up. Otherwise, add the PR to the `fundraising-devs` slack group.
 
-#### The Toolkit
+#### Merging
+
+Once approved, you are free to merge your changes into master and delete your branch on origin.
+
+#### Common repositories
+
+##### The Toolkit
 
 [JG.FrontEnd.Toolkit](https://source.justgiving.com/JustGiving/JG.FrontEnd.Toolkit)
 
-#### Fundraising One Page
+##### Fundraising One Page
 
 [JG.Pages.UI](https://source.justgiving.com/JustGiving/JG.Pages.UI)
 
-#### GraphQL
+##### GraphQL
 
 [JG.GraphQL](https://github.com/JustGiving/JG.GraphQL)
 
-#### Fitness
+##### Fitness
 
 [JG.Fitness](https://source.justgiving.com/JustGiving/JG.Fitness)
 
-#### Campaign Creation
+##### Campaign Creation
 
 [JG.FrontEnd.CampaignsCreation](https://source.justgiving.com/JustGiving/JG.FrontEnd.CampaignsCreation)
 
+## CI/CD
+
+Just Giving practises both [continuous integration](https://www.thoughtworks.com/continuous-integration) and [continuous delivery](https://continuousdelivery.com/). In order to merge a PR into master, it must first pass all code checks such as linting, unit testing and integration testing.
+
+### Pipelines
+
+[GOCD](https://www.gocd.org/) is used to run older project pipelines that deploy a project to certain stages. There are few different GOCD environments:
+
+* https://gocd.hub.justgiving.service/go/pipelines
+* https://deploy.prod.justgiving.service/go/pipelines
+
+[CircleCI](https://circleci.com/) is planned to be used as the new CI/CD platform to deploy code. Currently, only GraphQL is deployed using this.
+
 ## Sprints
 
-### Board
+The fundraising team practises the [Scrum methodology](https://www.atlassian.com/agile/scrum), working in 2 week sprints and undertaking sprint planning, sprint grooming, retrospective and demo ceremonies.
 
-### Ceremonies
+### Sprint board
 
-### Scrum
+A board hosting the current tickets for a sprint is used to organise the teams work. [Jira](https://justgiving.atlassian.net/secure/RapidBoard.jspa?rapidView=245) is used to manage this.
 
-### Codechecks
+## Toolkit
+
+[The toolkit](https://source.justgiving.com/JustGiving/JG.FrontEnd.Toolkit) is a collection of ready made front-end components and styles that can be imported and used in projects. It currently has two style guides:
+
+* [Storyboard](https://styleguide.dev.aws.justgiving.service)
+* [Docz](https://design-system.dev.aws.justgiving.service)
+
+Content is currently being migrated over from Storyboard to Docz, so if you are unable to find something be sure to check both.
 
 ## Cli
 
+The cli is where you will spend a lot of your time, so it's useful to set this up in the best possible way. I recommend using [iterm 2](https://www.iterm2.com/).
+
 ### Z Shell
+
+This is a personal opinion but [Z shell](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) (or Zsh) is the most useful shell to have in your cli.
 
 ### Oh my ZSH
 
+With Zsh you are also able to install [Oh my Zsh](https://github.com/robbyrussell/oh-my-zsh/), a framework for managing zsh configurations. Use this to make your terminal look like a computer out of nasa.
+
 ## Software
+
+Other useful software I recommend installing:
+
+* [Firefox Developer Edition](https://www.mozilla.org/en-GB/firefox/developer/)
+* [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
+* [GraphQL IDE](https://github.com/andev-software/graphql-ide/releases)
+* [Postman](https://www.getpostman.com/downloads)
+
 
