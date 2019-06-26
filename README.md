@@ -38,6 +38,8 @@ The changes can then be compared to a receiving branch and a PR can be opened. S
 
 Make sure to be descriptive as possible in the PR message. A link to a relating JIRA ticket and small description of feature added/problem solved is useful. Additionally, for any front-end tasks, a screenshot of the change made is a good idea.
 
+![](images/pr-details.png)
+
 ### Repos
 
 Common repositories:
