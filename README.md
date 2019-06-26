@@ -30,6 +30,14 @@ For both sites you will require admin privilages in order to see private reposit
 
 ### PRs
 
+Pull Requests are used to discuss and review new work that's been created for a project. A pull request is opened with the intention that the code within it, once approved, can be pulled into the main repository.
+
+When a branch is created locally, the changes within it first need to be staged locally, `git add -a -m "new commit message"`, and then pushed to the remote repository, `git push -u origin <branch-name>`. 
+
+The changes can then be compared to a receiving branch and a PR can be opened. See [here](https://help.github.com/en/articles/creating-a-pull-request) for more info.
+
+Make sure to be descriptive as possible in the PR message. A link to a relating JIRA ticket and small description of feature added/problem solved is useful. Additionally, for any front-end tasks, a screenshot of the change made is a good idea.
+
 ### Repos
 
 Common repositories:
@@ -42,15 +50,15 @@ Common repositories:
 
 [JG.Pages.UI](https://source.justgiving.com/JustGiving/JG.Pages.UI)
 
-### GraphQL
+#### GraphQL
 
 [JG.GraphQL](https://github.com/JustGiving/JG.GraphQL)
 
-### Fitness
+#### Fitness
 
 [JG.Fitness](https://source.justgiving.com/JustGiving/JG.Fitness)
 
-### Campaign Creation
+#### Campaign Creation
 
 [JG.FrontEnd.CampaignsCreation](https://source.justgiving.com/JustGiving/JG.FrontEnd.CampaignsCreation)
 
