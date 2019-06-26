@@ -106,6 +106,20 @@ A board hosting the current tickets for a sprint is used to organise the teams w
 
 Content is currently being migrated over from Storyboard to Docz, so if you are unable to find something be sure to check both.
 
+## Port mapping
+
+Most repos require `local.justgiving.com` to be mapped to `127.0.0.1`. In the terminal, open your hosts file:
+
+```bash
+open /etc/hosts
+```
+
+And add to the end
+
+```bash
+127.0.0.1 local.justgiving.com
+```
+
 ## Cli
 
 The cli is where you will spend a lot of your time, so it's useful to set this up in the best possible way. I recommend using [iterm 2](https://www.iterm2.com/).
@@ -126,5 +140,3 @@ Other useful software I recommend installing:
 * [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 * [GraphQL IDE](https://github.com/andev-software/graphql-ide/releases)
 * [Postman](https://www.getpostman.com/downloads)
-
-
