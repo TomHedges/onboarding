@@ -2,6 +2,20 @@
 
 This document aims to outlines some areas of interest when onboarding as a front-end developer at Just Giving for the Fundraising team.
 
+## 1. An introduction to Justgiving
+
+Welcome! ¡Hola! Bonjour! Guten Tag!
+
+#### Experiencing the platform as a user, to give context:
+
+* There should be a copy of "JustGiving: Your complete guide" on your desk - gives you a flavour of how charities interact with the platform. Similar content online at https://pages.justgiving.com/charities.html
+* To experience JG as a fundraiser, head to: https://www.dev.justgiving.com/ - you can safely set up fundraising pages and make test donations, without any money moving around and without charities being notified! More info: https://justgiving.atlassian.net/wiki/spaces/PAY/pages/46891039/Testing+Donations
+
+#### Engineering onboarding:
+
+* List of useful acronyms - https://justgiving.atlassian.net/wiki/spaces/PROD/pages/1382252564/JustGiving+Acroynms
+* A new starter session should run in your first month - and this document is the detailed version of what is sumamrised in that session: https://justgiving.atlassian.net/wiki/spaces/CONSUMERTECH/pages/1667465238/New+starter+session
+
 ## 1. Slack groups
 
 Useful groups to join:
