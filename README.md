@@ -2,33 +2,38 @@
 
 This document aims to outlines some areas of interest when onboarding as a front-end developer at Just Giving for the Fundraising team.
 
-## Slack groups
+## 1. Slack groups
 
 Useful groups to join:
 
 * 111-fr-one-page
 * 114-timeline
+* all-justgiving
 * front-end
-* frontend-prs
-* fundraising
-* fundraising-devs
+* frontend-prs - NOTE: this is a private group, so you'll need to be invited by an existing member. Any front-ender can help.
+* frontline
+* fundraising - NOTE: this is a private group, so you'll need to be invited by an existing member. Any member of the FR team can help.
+* fundraising-devs - NOTE: this is a private group, so you'll need to be invited by an existing member. Any member of the FR team can help.
 * fundraising-support
-* funtech
+* funtech - NOTE: this is a private group, so you'll need to be invited by an existing member. Any member of the FR/Fintech team can help. This is a joint channel for Fintech and Fundraising team - as we're both managed by Mark Vickery.
 * graphql
+* jg-developer-support
 * jgtech
+* offline
 * releases
 * stackoverflow
+* tech-day
 * ui-toolkit
 
-## Github
+## 2. Github
 
 [Github](https://github.com/) is used as storage for work produced at JG. Work is split between [Github Enterprise](https://source.justgiving.com/) and [Github](https://github.com/JustGiving), with the aim of migrating old projects in Github Enterprise over to Github.
 
-### Privilages
+#### Privileges
 
 For both sites you will require admin privilages in order to see private repositories. Invitation links should be emailed to you. In the case that they aren't, speak to Tomasz Cudok.
 
-### PRs
+#### PRs
 
 Pull Requests are used to discuss and review new work that's been created for a project. A pull request is opened with the intention that the code within it, once approved, can be pulled into the main repository.
 
@@ -76,7 +81,7 @@ Once approved, you are free to merge your changes into master and delete your br
 
 [JG.FrontEnd.CampaignsCreation](https://source.justgiving.com/JustGiving/JG.FrontEnd.CampaignsCreation)
 
-## CI/CD
+## 3. CI/CD
 
 Just Giving practises both [continuous integration](https://www.thoughtworks.com/continuous-integration) and [continuous delivery](https://continuousdelivery.com/). In order to merge a PR into master, it must first pass all code checks such as linting, unit testing and integration testing.
 
@@ -89,7 +94,7 @@ Just Giving practises both [continuous integration](https://www.thoughtworks.com
 
 [CircleCI](https://circleci.com/) is planned to be used as the new CI/CD platform to deploy code. Currently, only GraphQL is deployed using this.
 
-## Sprints
+## 4. Sprints
 
 The fundraising team practises the [Scrum methodology](https://www.atlassian.com/agile/scrum), working in 2 week sprints and undertaking sprint planning, sprint grooming, retrospective and demo ceremonies.
 
@@ -97,7 +102,7 @@ The fundraising team practises the [Scrum methodology](https://www.atlassian.com
 
 A board hosting the current tickets for a sprint is used to organise the teams work. [Jira](https://justgiving.atlassian.net/secure/RapidBoard.jspa?rapidView=245) is used to manage this.
 
-## Toolkit
+## 5. Toolkit
 
 [The toolkit](https://source.justgiving.com/JustGiving/JG.FrontEnd.Toolkit) is a collection of ready made front-end components and styles that can be imported and used in projects. It currently has two style guides:
 
@@ -106,7 +111,7 @@ A board hosting the current tickets for a sprint is used to organise the teams w
 
 Content is currently being migrated over from Storyboard to Docz, so if you are unable to find something be sure to check both.
 
-## Port mapping
+## 6. Port mapping
 
 Most repos require `local.justgiving.com` to be mapped to `127.0.0.1`. In the terminal, open your hosts file:
 
@@ -120,7 +125,7 @@ And add to the end
 127.0.0.1 local.justgiving.com
 ```
 
-## Cli
+## 7. Cli
 
 The cli is where you will spend a lot of your time, so it's useful to set this up in the best possible way. I recommend using [iterm 2](https://www.iterm2.com/).
 
@@ -132,7 +137,7 @@ This is a personal opinion but [Z shell](https://github.com/robbyrussell/oh-my-z
 
 With Zsh you are also able to install [Oh my Zsh](https://github.com/robbyrussell/oh-my-zsh/), a framework for managing zsh configurations. Use this to make your terminal look like a computer out of nasa.
 
-## Software
+## 8. Software
 
 Other useful software I recommend installing:
 
