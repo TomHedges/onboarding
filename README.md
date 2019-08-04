@@ -1,10 +1,10 @@
-# Onboarding
-
-This document aims to outlines some areas of interest when onboarding as a front-end developer at Just Giving for the Fundraising team.
-
-## 1. An introduction to Justgiving
+# JustGiving Fundraising Front-end Engineer Onboarding
 
 Welcome! ¡Hola! Bonjour! Guten Tag!
+
+This document aims to outlines some areas of interest and quick reference when onboarding as a front-end developer at Just Giving for the Fundraising team.
+
+## 1. An introduction to Justgiving
 
 #### Experiencing the platform as a user, to give context:
 
@@ -43,6 +43,28 @@ Useful groups to join:
 
 [Github](https://github.com/) is used as storage for work produced at JG. Work is split between [Github Enterprise](https://source.justgiving.com/) and [Github](https://github.com/JustGiving), with the aim of migrating old projects in Github Enterprise over to Github.
 
+#### Common repositories
+
+##### The Toolkit
+
+[JG.FrontEnd.Toolkit](https://source.justgiving.com/JustGiving/JG.FrontEnd.Toolkit)
+
+##### Fundraising One Page
+
+[JG.Pages.UI](https://source.justgiving.com/JustGiving/JG.Pages.UI)
+
+##### GraphQL
+
+[JG.GraphQL](https://github.com/JustGiving/JG.GraphQL)
+
+##### Fitness
+
+[JG.Fitness](https://source.justgiving.com/JustGiving/JG.Fitness)
+
+##### Campaign Creation
+
+[JG.FrontEnd.CampaignsCreation](https://source.justgiving.com/JustGiving/JG.FrontEnd.CampaignsCreation)
+
 #### Privileges
 
 For both sites you will require admin privilages in order to see private repositories. Invitation links should be emailed to you. In the case that they aren't, speak to Tomasz Cudok.
@@ -73,28 +95,6 @@ Before a PR can be merged, it first needs to be checked and approved by another 
 
 Once approved, you are free to merge your changes into master and delete your branch on origin.
 
-#### Common repositories
-
-##### The Toolkit
-
-[JG.FrontEnd.Toolkit](https://source.justgiving.com/JustGiving/JG.FrontEnd.Toolkit)
-
-##### Fundraising One Page
-
-[JG.Pages.UI](https://source.justgiving.com/JustGiving/JG.Pages.UI)
-
-##### GraphQL
-
-[JG.GraphQL](https://github.com/JustGiving/JG.GraphQL)
-
-##### Fitness
-
-[JG.Fitness](https://source.justgiving.com/JustGiving/JG.Fitness)
-
-##### Campaign Creation
-
-[JG.FrontEnd.CampaignsCreation](https://source.justgiving.com/JustGiving/JG.FrontEnd.CampaignsCreation)
-
 ## 3. CI/CD
 
 Just Giving practises both [continuous integration](https://www.thoughtworks.com/continuous-integration) and [continuous delivery](https://continuousdelivery.com/). In order to merge a PR into master, it must first pass all code checks such as linting, unit testing and integration testing.
@@ -106,7 +106,8 @@ Just Giving practises both [continuous integration](https://www.thoughtworks.com
 * https://gocd.hub.justgiving.service/go/pipelines
 * https://deploy.prod.justgiving.service/go/pipelines
 
-[CircleCI](https://circleci.com/) is planned to be used as the new CI/CD platform to deploy code. Currently, only GraphQL is deployed using this.
+[CircleCI](https://circleci.com/) is planned to be used as the new CI/CD platform to deploy code. Currently, only GraphQL is deployed using CircleCI:
+* https://circleci.com/gh/JustGiving
 
 ## 4. Sprints
 
@@ -124,6 +125,8 @@ A board hosting the current tickets for a sprint is used to organise the teams w
 * [Docz](https://design-system.dev.aws.justgiving.service)
 
 Content is currently being migrated over from Storyboard to Docz, so if you are unable to find something be sure to check both.
+
+_**Note:**_ The current OnePage project involves re-appraising some of these components, and rebuilding them rather than simply importing the existing version from the style guide.
 
 ## 6. Port mapping
 
