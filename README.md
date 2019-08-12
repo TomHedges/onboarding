@@ -43,31 +43,21 @@ Useful groups to join:
 
 [Github](https://github.com/) is used as storage for work produced at JG. Work is split between [Github Enterprise](https://source.justgiving.com/) and [Github](https://github.com/JustGiving), with the aim of migrating old projects in Github Enterprise over to Github.
 
-#### Common repositories
+### Common repositories
 
-##### The Toolkit
+The Toolkit - [JG.FrontEnd.Toolkit](https://source.justgiving.com/JustGiving/JG.FrontEnd.Toolkit)
 
-[JG.FrontEnd.Toolkit](https://source.justgiving.com/JustGiving/JG.FrontEnd.Toolkit)
+Fundraising One Page - [JG.Pages.UI](https://source.justgiving.com/JustGiving/JG.Pages.UI)
 
-##### Fundraising One Page
+GraphQL - [JG.GraphQL](https://github.com/JustGiving/JG.GraphQL)
 
-[JG.Pages.UI](https://source.justgiving.com/JustGiving/JG.Pages.UI)
+Fitness - [JG.Fitness](https://source.justgiving.com/JustGiving/JG.Fitness)
 
-##### GraphQL
-
-[JG.GraphQL](https://github.com/JustGiving/JG.GraphQL)
-
-##### Fitness
-
-[JG.Fitness](https://source.justgiving.com/JustGiving/JG.Fitness)
-
-##### Campaign Creation
-
-[JG.FrontEnd.CampaignsCreation](https://source.justgiving.com/JustGiving/JG.FrontEnd.CampaignsCreation)
+Campaign Creation - [JG.FrontEnd.CampaignsCreation](https://source.justgiving.com/JustGiving/JG.FrontEnd.CampaignsCreation)
 
 #### Privileges
 
-For both sites you will require admin privilages in order to see private repositories. Invitation links should be emailed to you. In the case that they aren't, speak to Tomasz Cudok.
+For both sites you will require admin privilages in order to see private repositories. Invitation links should be emailed to you. In the case that they aren't, speak to Tomasz Cudok or Tech Services
 
 #### PRs
 
@@ -128,7 +118,9 @@ Content is currently being migrated over from Storyboard to Docz, so if you are 
 
 _**Note:**_ The current OnePage project involves re-appraising some of these components, and rebuilding them rather than simply importing the existing version from the style guide.
 
-## 6. Port mapping
+## 6. System Configuration
+
+#### Port mapping
 
 Most repos require `local.justgiving.com` to be mapped to `127.0.0.1`. In the terminal, open your hosts file:
 
@@ -141,6 +133,25 @@ And add to the end
 ```bash
 127.0.0.1 local.justgiving.com
 ```
+
+#### Proxy
+
+Some internal URLs require a proxy. To configure for a Mac:
+
+* Go to: System Preferences > Network > 'Advanced' button > 'Proxies' tab
+* Tick 'Automatic Proxy Configuration'
+* Click the words 'Automatic Proxy Configuration' to highlight that field and display the URL box
+* Enter the URL 'http://10.254.10.254/wpad.dat' (without quotes)
+* In the "Bypass proxy settings..." field at the bottom of the window, '*.local, 169.254/16' (without quotes)
+
+#### GitHub Package Registry
+
+[How to configure Yarn/npm to use GitHub Package Registry for @justgiving packages](https://stackoverflow.com/c/justgiving/questions/181)
+
+#### AWS Credentials (for GraphQL project)
+
+[node-awscreds](https://github.com/JustGiving/node-awscreds)
+
 
 ## 7. Cli
 
